@@ -1,0 +1,897 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background: url('../assets/img/08e78852b28ef52be66a5040ae6ab679.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  text-align: center;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  color: white;
+}
+
+html[lang="th"] body {
+  font-family: 'Prompt', sans-serif;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between; /* กระจายเนื้อหา */
+  align-items: center; /* จัดตำแหน่งให้อยู่กลางแนวตั้ง */
+  padding: 20px 60px;
+  height: 100px;
+  width: 100%; /* ครอบคลุมทั้งหน้าจอ */
+}
+
+.nav {
+  display: flex;
+  padding-top: 20px; /* เพิ่มระยะห่างจากขอบบน */
+
+  justify-content: space-between; /* กระจายเนื้อหา */
+  width: 100%;
+}
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-menu li a {
+  font-size: 20px; /* กำหนดขนาดตัวอักษร */
+  text-decoration: none;
+  color: #fff; /* สีปกติ */
+  font-weight: bold;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.nav-menu li a:hover {
+  color: yellow; /* เมื่อเอาเมาส์ชี้ */
+}
+
+.portfolio-logo {
+  font-size: 3rem;  /* ขนาดฟอนต์ */
+  font-weight: bold;
+  color: white;
+  margin-right: 20px; /* ระยะห่างระหว่างโลโก้กับเมนู */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: 'Arial', sans-serif;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 90px;
+  color: white;
+  justify-content: center; /* จัดเมนูให้อยู่กลาง */
+  flex-grow: 1;
+}
+
+.language-switcher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px; /* จัดปุ่มสลับภาษาไปทางซ้ายสุด */
+}
+
+.bookmarkBtn {
+  width: 100px;
+  height: 40px;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.349);
+  background-color: rgb(12, 12, 12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  box-sizing: border-box; /* ทำให้ขนาดรวมถึงขอบและ padding */
+}
+
+.IconContainer {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(to bottom, rgb(255, 136, 255), rgb(172, 70, 255));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.3s;
+}
+
+.IconContainer img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.text {
+  height: 100%;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition-duration: 0.3s;
+  font-size: 1.04em;
+}
+
+.bookmarkBtn:hover .IconContainer {
+  width: 90px;
+}
+
+.bookmarkBtn:hover .text {
+  transform: translate(10px);
+  width: 0;
+  font-size: 0;
+}
+
+.bookmarkBtn:active {
+  transform: scale(0.95);
+}
+
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 50px; /* ระยะห่างจากขอบซ้าย */
+}
+
+nav {
+  display: flex;
+  justify-content: center; /* จัดเมนูให้อยู่ตรงกลาง */
+  align-items: center; /* จัดตำแหน่งเมนูในแนวตั้ง */
+  width: 100%; /* ทำให้ nav ครอบคลุมพื้นที่ที่เหลือ */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin-left: 70px; /* ปรับช่องว่างระหว่างรายการ */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px; /* เพิ่มระยะห่างระหว่างตัวอักษร */
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 60px;
+  max-width: 1200px;
+  margin: auto;
+  text-align: left;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 50%;
+}
+  
+.hero-image img {
+  width: 100%;
+  margin-left: 90px;
+  max-width: 350px;
+  border-radius: 0 90px 0 90px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ffcc00;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ffaa00;
+}
+
+/* ABOUT SECTION */
+.about {
+  font-size: 21px;
+  max-width: 800px;
+  line-height: 1.6;
+  margin: 0 auto;
+  word-break: break-word; /* เพิ่มให้คำยาวเกินไปไม่ตัดออกจากบรรทัด */
+}
+
+.about h2 {
+  text-align: center; /* จัดข้อความใน <h2> ให้ตรงกลาง */
+}
+
+.about p {
+  text-align: justify; /* จัดข้อความใน <p> ให้เต็มบรรทัด */
+}
+
+section {
+  padding: 60px 20px;
+}
+
+
+/* SKILLS SECTION */
+.skills {
+  font-size: 23px;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+.languages,
+.frameworks,
+.tools {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1200px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.skill-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  text-align: center;
+}
+
+.skill-item img.icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+.skill-item img.icon:hover {
+  transform: scale(1.6); /* Enlarge the icon to 120% */
+}
+.skill-item p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: white;
+}
+.project-image {
+  display: block;
+  margin: 0 auto;         /* จัดภาพให้อยู่ตรงกลางแนวนอน */
+  max-width: 70%;
+  height: auto;
+  margin: 20px auto; 
+}
+
+.project-item {
+  text-align: center;      /* จัดข้อความและ slider ให้อยู่กลาง */
+  padding: 20px;
+}
+
+.slick-slide > div {
+  display: flex;
+  justify-content: center; /* จัดให้ภาพอยู่ตรงกลางแนวนอน */
+}
+
+.project-description {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: justify;
+  text-align-last: center;
+  line-height: 1.6;
+  margin: 30px auto 40px; /* บน 20px, ซ้าย/ขวา auto, ล่าง 40px */
+
+}
+
+.project-section {
+  margin: 50px 0; /* เพิ่มห่างด้านบนและล่างของแต่ละ section */
+}
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* จัดให้อยู่กึ่งกลางแนวนอน */
+  text-align: center; /* จัดข้อความให้อยู่กลาง */
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero-content,
+  .hero-image {
+    max-width: 100%;
+    margin-left: 0;
+  }
+
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .languages,
+  .frameworks,
+  .tools {
+    width: 90%;
+  }
+}
+
+  .projects .project-item {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 80%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  footer {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+
+  
+  /* From Uiverse.io by Ashon-G */ 
+  .uiverse {
+    --duration: 7s;
+    --easing: linear;
+    --c-color-1: rgba(255, 160, 16, 0.7);
+    --c-color-2: #1a23ff;
+    --c-color-3: #e21bda;
+    --c-color-4: rgba(255, 232, 26, 0.7);
+    --c-shadow: rgba(255, 223, 87, 0.5);
+    --c-shadow-inset-top: rgba(255, 223, 52, 0.9);
+    --c-shadow-inset-bottom: rgba(255, 250, 215, 0.8);
+    --c-radial-inner: #ffd215;
+    --c-radial-outer: #fff172;
+    --c-color: #fff;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    display: table;
+    border-radius: 24px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    color: var(--c-color);
+    background: radial-gradient(
+      circle,
+      var(--c-radial-inner),
+      var(--c-radial-outer) 80%
+    );
+    box-shadow: 0 0 14px var(--c-shadow);
+  }
+  
+  .uiverse:before {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 24px;
+    box-shadow:
+      inset 0 3px 12px var(--c-shadow-inset-top),
+      inset 0 -3px 4px var(--c-shadow-inset-bottom);
+  }
+  
+  .uiverse .wrapper {
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    overflow: hidden;
+    border-radius: 24px;
+    min-width: 132px;
+    padding: 12px 0;
+  }
+  
+  .uiverse .wrapper span {
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .uiverse:hover {
+    --duration: 1400ms;
+  }
+  
+  .uiverse .wrapper .circle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    filter: blur(var(--blur, 8px));
+    background: var(--background, transparent);
+    transform: translate(var(--x, 0), var(--y, 0)) translateZ(0);
+    animation: var(--animation, none) var(--duration) var(--easing) infinite;
+  }
+  
+  .uiverse .wrapper .circle.circle-1,
+  .uiverse .wrapper .circle.circle-9,
+  .uiverse .wrapper .circle.circle-10 {
+    --background: var(--c-color-4);
+  }
+  
+  .uiverse .wrapper .circle.circle-3,
+  .uiverse .wrapper .circle.circle-4 {
+    --background: var(--c-color-2);
+    --blur: 14px;
+  }
+  
+  .uiverse .wrapper .circle.circle-5,
+  .uiverse .wrapper .circle.circle-6 {
+    --background: var(--c-color-3);
+    --blur: 16px;
+  }
+  
+  .uiverse .wrapper .circle.circle-2,
+  .uiverse .wrapper .circle.circle-7,
+  .uiverse .wrapper .circle.circle-8,
+  .uiverse .wrapper .circle.circle-11,
+  .uiverse .wrapper .circle.circle-12 {
+    --background: var(--c-color-1);
+    --blur: 12px;
+  }
+  
+  .uiverse .wrapper .circle.circle-1 {
+    --x: 0;
+    --y: -40px;
+    --animation: circle-1;
+  }
+  
+  .uiverse .wrapper .circle.circle-2 {
+    --x: 92px;
+    --y: 8px;
+    --animation: circle-2;
+  }
+  
+  .uiverse .wrapper .circle.circle-3 {
+    --x: -12px;
+    --y: -12px;
+    --animation: circle-3;
+  }
+  
+  .uiverse .wrapper .circle.circle-4 {
+    --x: 80px;
+    --y: -12px;
+    --animation: circle-4;
+  }
+  
+  .uiverse .wrapper .circle.circle-5 {
+    --x: 12px;
+    --y: -4px;
+    --animation: circle-5;
+  }
+  
+  .uiverse .wrapper .circle.circle-6 {
+    --x: 56px;
+    --y: 16px;
+    --animation: circle-6;
+  }
+  
+  .uiverse .wrapper .circle.circle-7 {
+    --x: 8px;
+    --y: 28px;
+    --animation: circle-7;
+  }
+  
+  .uiverse .wrapper .circle.circle-8 {
+    --x: 28px;
+    --y: -4px;
+    --animation: circle-8;
+  }
+  
+  .uiverse .wrapper .circle.circle-9 {
+    --x: 20px;
+    --y: -12px;
+    --animation: circle-9;
+  }
+  
+  .uiverse .wrapper .circle.circle-10 {
+    --x: 64px;
+    --y: 16px;
+    --animation: circle-10;
+  }
+  
+  .uiverse .wrapper .circle.circle-11 {
+    --x: 4px;
+    --y: 4px;
+    --animation: circle-11;
+  }
+  
+  .uiverse .wrapper .circle.circle-12 {
+    --blur: 14px;
+    --x: 52px;
+    --y: 4px;
+    --animation: circle-12;
+  }
+  
+  @keyframes circle-1 {
+    33% {
+      transform: translate(0px, 16px) translateZ(0);
+    }
+  
+    66% {
+      transform: translate(12px, 64px) translateZ(0);
+    }
+  }
+  
+  @keyframes circle-2 {
+    33% {
+      transform: translate(80px, -10px) translateZ(0);
+    }
+  
+    66% {
+      transform: translate(72px, -48px) translateZ(0);
+    }
+  }
+  
+  @keyframes circle-3 {
+    33% {
+      transform: translate(20px, 12px) translateZ(0);
+    }
+  
+    66% {
+      transform: translate(12px, 4px) translateZ(0);
+    }
+  }
+  
+  @keyframes circle-4 {
+    33% {
+      transform: translate(76px, -12px) translateZ(0);
+    }
+  
+    66% {
+      transform: translate(112px, -8px) translateZ(0);
+    }
+  }
+  
+  @keyframes circle-5 {
+    33% {
+      transform: translate(84px, 28px) translateZ(0);
+    }
+  
+    66% {
+      transform: translate(40px, -32px) translateZ(0);
+    }
+  }
+  
+  @keyframes circle-6 {
+    33% {
+      transform: translate(28px, -16px) translateZ(0);
+    }
+  
+    66% {
+      transform: translate(76px, -56px) translateZ(0);
+    }
+  }
+  
+  @keyframes circle-7 {
+    33% {
+      transform: translate(8px, 28px) translateZ(0);
+    }
+  
+    66% {
+      transform: translate(20px, -60px) translateZ(0);
+    }
+  }
+  
+  @keyframes circle-8 {
+    33% {
+      transform: translate(32px, -4px) translateZ(0);
+    }
+  
+    66% {
+      transform: translate(56px, -20px) translateZ(0);
+    }
+  }
+  
+  @keyframes circle-9 {
+    33% {
+      transform: translate(20px, -12px) translateZ(0);
+    }
+  
+    66% {
+      transform: translate(80px, -8px) translateZ(0);
+    }
+  }
+  
+  @keyframes circle-10 {
+    33% {
+      transform: translate(68px, 20px) translateZ(0);
+    }
+  
+    66% {
+      transform: translate(100px, 28px) translateZ(0);
+    }
+  }
+  
+  @keyframes circle-11 {
+    33% {
+      transform: translate(4px, 4px) translateZ(0);
+    }
+  
+    66% {
+      transform: translate(68px, 20px) translateZ(0);
+    }
+  }
+  
+  @keyframes circle-12 {
+    33% {
+      transform: translate(56px, 0px) translateZ(0);
+    }
+  
+    66% {
+      transform: translate(60px, -32px) translateZ(0);
+    }
+  }
+ 
+  
+  .language-switcher {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 35px;
+    margin-top: -20px; /* ปรับตามความสูง Header ของคุณ */
+    z-index: 20;
+  }
+  
+  
+  /* ปุ่ม Bookmark Style */
+  .bookmarkBtn {
+    width: 100px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.349);
+    background-color: rgb(12, 12, 12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    overflow: hidden;
+  }
+  
+  .IconContainer {
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(to bottom, rgb(255, 136, 255), rgb(172, 70, 255));
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 2;
+    transition-duration: 0.3s;
+  }
+  
+.IconContainer img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
+  
+  .icon {
+    border-radius: 1px;
+    fill: white;
+  }
+  
+  .text {
+    height: 100%;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 1;
+    transition-duration: 0.3s;
+    font-size: 1.04em;
+  }
+  
+  .bookmarkBtn:hover .IconContainer {
+    width: 90px;
+    transition-duration: 0.3s;
+  }
+  
+  .bookmarkBtn:hover .text {
+    transform: translate(10px);
+    width: 0;
+    font-size: 0;
+    transition-duration: 0.3s;
+  }
+  
+  .bookmarkBtn:active {
+    transform: scale(0.95);
+    transition-duration: 0.3s;
+  }
+
+    @media (max-width: 900px) {
+      .language-switcher {
+        /* ปรับขนาดของปุ่มให้เล็กลง */
+        margin-right: 5px; /* อาจต้องปรับระยะห่างจากขอบ */
+        justify-content: flex-start; /* ให้ปุ่มอยู่ชิดซ้าย */
+      }
+    
+      .bookmarkBtn {
+        width: 80px;  /* ปรับขนาดของปุ่ม */
+        height: 35px;
+        font-size: 14px;  /* ลดขนาดตัวอักษร */
+      }
+  
+    .IconContainer {
+      width: 28px;
+      height: 28px;
+    }
+  
+    .IconContainer img {
+      width: 18px;
+      height: 18px;
+    }
+  
+    .text {
+      font-size: 0.9em;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .nav-menu {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .hero h1 {
+      font-size: 32px;
+    }
+  
+    .btn {
+      font-size: 16px;
+      padding: 8px 16px;
+    }
+  
+    .bookmarkBtn {
+      width: 80px;
+      height: 35px;
+    }
+  
+    .skill-item img.icon {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  @media (max-width: 768px) {
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;  /* จัดกลางแนวตั้ง */
+      padding: 20px;
+      height: auto;
+      text-align: center;       /* จัดกลางเนื้อหาข้อความ */
+    }
+  
+    .portfolio-logo {
+      font-size: 1.3rem;
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .nav-menu {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .language-switcher {
+      margin: 20px 0;
+    }
+  
+    .hero {
+      flex-direction: column;
+      padding: 30px 20px;
+      text-align: center;
+    }
+  
+    .hero-content {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 0 20px; /* กันข้อความชิดขอบหน้าจอเกินไป */
+      text-align: center; /* หรือ left ถ้าต้องการชิดซ้าย */
+  }
+  
+  
+    .hero-image img {
+      margin: 20px auto 0;
+      max-width: 250px;
+      border-radius: 50px;
+    }
+  
+    .hero h1 {
+      font-size: 32px;
+    }
+  
+    .hero p {
+      font-size: 16px;
+    }
+  
+    .btn {
+      padding: 8px 16px;
+      font-size: 16px;
+    }
+  
+  
+    .skills-container {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+  
+  }
+  

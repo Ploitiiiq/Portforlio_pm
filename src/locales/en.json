@@ -1,0 +1,24 @@
+{
+  "about_Me": "About Me",
+  "graduate": "Hello, my name is Sutthata Lajamnong, a recent graduate from Rajamangala University of Technology Isan, Faculty of Engineering, majoring in Computer Engineering. I have a strong interest in web and application development, particularly in Front-end Development and UX/UI Design. I have 4 months of internship experience as a Front-end Developer, during which I developed mobile applications using Flutter. For my final project, I developed an internal online leave management system for an organization, where I was responsible for designing and developing the front-end to ensure a smooth and user-friendly experience",
+  "Junior": "Hello! I’m a recent Computer Engineering graduate, currently developing my skills in Front-end Development and UX/UI design.",
+  "experiences": "I believe that a great user experience begins with truly understanding the needs of users. I’m ready to learn, grow, and collaborate with a team to create work that is not only visually appealing but also highly functional and efficient.",
+  "Contact": "Contact",
+  "reserved": "2025 My Portfolio. All rights reserved.",
+  "Portfolio": "Portfolio",
+  "About": "About",
+  "Home": "Home",
+  "Skills": "Skills",
+  "Projects": "Projects",
+  "Resume": "Resume",
+  "Languages": "Languages",
+  "Frameworks": "Frameworks",
+  "Tools": "Tools",
+  "Final_Project": "Final Project",
+  "Internship_Project": "Internship Project",
+  "leave": "Internal Online Leave Management System",
+  "Flutter": "Application Development (Flutter)",
+  "jecti": "Developed Frontend and designed UX/UI for a Personnel Leave Management System using HTML, CSS, and JavaScript (Vanilla JS). Created Wireframes and User Flows for diverse roles (employees, department heads, executives) with Role-based Access Control (RBAC).Key features included user authentication, leave requests, approvals, leave balance tracking, and holiday management, focusing on user-friendly design and scalable solutions for enterprise use.",
+  "jectii":"During my internship as a Frontend Developer, I developed mobile applications using Flutter and Dart. My tasks included designing UI, writing Data Models, and consuming RESTful APIs with Postman and Swagger. I performed Data Mapping to display data as per requirements and contributed to Mockup design. I also implemented Skeleton Loader to replace traditional loading indicators, improving user experience. I worked closely with the Backend team to ensure seamless data integration."
+  
+}
