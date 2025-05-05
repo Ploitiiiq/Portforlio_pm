@@ -5,23 +5,24 @@ import profileImage from '../assets/img/Profile.jpg'; // นำเข้าร�
 const Hero = () => {
   const { t } = useTranslation(); // เรียกใช้ t() จาก useTranslation ที่นี่
 
-  const downloadResume = () => {
-    window.location.href = "/file/Resume_sutatta.pdf"; // ใช้ชื่อไฟล์ใหม่ที่นี่
-  };
-
   return (
     <section className="hero">
       <div className="hero-content">
         <h1>{t('Junior')}</h1> 
         <p>{t('experiences')}</p> 
 
-        <button className="uiverse" onClick={downloadResume}>
+        {/* ลิงก์ดาวน์โหลด PDF โดยไม่เปิดแท็บใหม่ */}
+        <a
+          href="/file/l CV Resume sutatta.pdf"
+          download="l CV Resume sutatta.pdf"
+          className="uiverse"
+        >
           <div className="wrapper">
-            <span>{t('Resume')}</span> 
+            <span>{t('Resume')}</span>
             <div className="circle circle-12"></div>
             <div className="circle circle-11"></div>
           </div>
-        </button>
+        </a>
       </div>
       <div className="hero-image">
         <img src={profileImage} alt="Profile Image" />

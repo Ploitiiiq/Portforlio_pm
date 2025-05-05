@@ -9,7 +9,7 @@ const Contact = () => {
     <section id="contact" className="contact">
       <p>{t('Contact')}</p> 
       <p>Email: 📧 ploitii6@gmail.com</p>
-      <p>GitHub: 🐙 <a href="#">github.com/myprofile</a></p>
+      <p>GitHub: 🐙 <a href="https://github.com/Ploitiiq">https://github.com/Ploitiiq</a></p>
     </section>
   );
 }
