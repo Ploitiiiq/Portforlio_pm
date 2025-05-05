@@ -1,24 +1,7 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+# ไม่ให้ Git ติดตามโฟลเดอร์ทั้งหมด
+node_modules/
+dist/
 
-node_modules
-dist
-dist-ssr
-*.local
-
-# Editor directories and files
-.vscode/*
-!.vscode/extensions.json
-.idea
-.DS_Store
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
+# แต่ให้ Git ติดตามบางไฟล์ในโฟลเดอร์เหล่านี้
+!node_modules/important-package/
+!dist/some-file.js
