@@ -1,17 +1,23 @@
-// src/components/Hero.jsx
-import { useTranslation } from 'react-i18next'; // นำเข้า useTranslation
-import profileImage from '../assets/img/Profile.jpg'; // นำเข้ารูปภาพ Profile.jpg
+// src/components/Hero.tsx
+import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
+import profileImage from '../assets/img/Profile.jpg';
 
 const Hero = () => {
-  const { t } = useTranslation(); // เรียกใช้ t() จาก useTranslation ที่นี่
+  const { t } = useTranslation();
 
   return (
-    <section className="hero">
-      <div className="hero-content">
-        <h1>{t('Junior')}</h1> 
-        <p>{t('experiences')}</p> 
+    <section className="hero flex flex-col md:flex-row items-center justify-between p-8">
+      <motion.div
+        className="hero-content text-center md:text-left"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: false }}
+      >
+        <h1 className="text-4xl font-bold mb-2">{t('Junior')}</h1>
+        <p className="text-lg mb-4">{t('experiences')}</p>
 
-        {/* ลิงก์ดาวน์โหลด PDF โดยไม่เปิดแท็บใหม่ */}
         <a
           href="/file/l CV Resume sutatta.pdf"
           download="l CV Resume sutatta.pdf"
@@ -23,10 +29,17 @@ const Hero = () => {
             <div className="circle circle-11"></div>
           </div>
         </a>
-      </div>
-      <div className="hero-image">
-        <img src={profileImage} alt="Profile Image" />
-      </div>
+      </motion.div>
+
+      <motion.div
+        className="hero-image mt-6 md:mt-0"
+        initial={{ opacity: 0, scale: 0.9 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
+        <img src={profileImage} alt="Profile" className="rounded-full w-48 h-48 object-cover shadow-lg" />
+      </motion.div>
     </section>
   );
 };

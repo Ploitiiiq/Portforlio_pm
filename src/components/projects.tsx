@@ -25,15 +25,14 @@ import "./skills.css";
 const Projects = () => {
   const { t } = useTranslation();
 
-  // การตั้งค่าของสไลด์
   const settings = {
-    dots: true,              // แสดงจุด navigation ด้านล่าง
-    infinite: true,          // เลื่อนไม่รู้จบ
-    speed: 500,              // ความเร็วในการสไลด์ (0.5 วินาที)
-    slidesToShow: 1,         // แสดงทีละ 1 รูป
-    slidesToScroll: 1,       // เลื่อนทีละ 1 รูป
-    autoplay: true,          // เริ่มเล่นอัตโนมัติ
-    autoplaySpeed: 3000,     // เวลาพักระหว่างภาพ (3 วินาที)
+    dots: true,            
+    infinite: true,          
+    speed: 500,            
+    slidesToShow: 1,        
+    slidesToScroll: 1,      
+    autoplay: true,       
+    autoplaySpeed: 3000,    
   };
   
 
@@ -45,7 +44,6 @@ const Projects = () => {
         <h3>{t('Final_Project')}</h3>
         <div className="project-item">
           <h4>{t('leave')}</h4>
-          {/* เริ่ม Slider */}
           <Slider {...settings}>
   <div>
     <img
@@ -138,7 +136,6 @@ const Projects = () => {
       className="project-image"
     />
   </div>
-  {/* เพิ่มได้เรื่อย ๆ ตามจำนวนรูป */}
 </Slider>
           <p className="project-description">
             {t('jecti')}
@@ -172,7 +169,6 @@ const Projects = () => {
       className="project-image"
     />
   </div>
-  {/* เพิ่มได้เรื่อย ๆ ตามจำนวนรูป */}
 </Slider>
 
           <p className="project-description">

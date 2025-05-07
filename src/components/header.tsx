@@ -1,13 +1,15 @@
+import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
-import './skills.css';
-// นำเข้าภาพธง
 import ukFlag from '../assets/icon/en.png';
 import thFlag from '../assets/icon/th.png';
+import './skills.css';
+
+const navItems = ['Home', 'About', 'Projects', 'Contact'];
 
 const Header: React.FC = () => {
-  const { t, i18n } = useTranslation(); // ใช้ t() เพื่อแปลข้อความ
+  const { t, i18n } = useTranslation();
   const [language, setLanguage] = useState(i18n.language || 'en');
 
   const handleLanguageChange = () => {
@@ -17,33 +19,50 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header>
+    <motion.header
+      initial={{ opacity: 0, y: -40 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6 }}
+    >
       <div className="nav">
         <div className="portfolio-logo">
           <strong>Portfolio</strong>
         </div>
 
         <ul className="nav-menu">
-          <li><a href="#home">{t('Home')}</a></li>
-          <li><a href="#about">{t('About')}</a></li>
-          <li><a href="#projects">{t('Projects')}</a></li>
-          <li><a href="#contact">{t('Contact')}</a></li>
+          {navItems.map((item, index) => (
+            <motion.li
+              key={item}
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2 + index * 0.1 }}
+              whileHover={{ scale: 1.1 }}  
+            >
+              <a href={`#${item.toLowerCase()}`}>{t(item)}</a>
+            </motion.li>
+          ))}
         </ul>
 
-        {/* language switcher */}
         <div className="language-switcher">
-          <button className="bookmarkBtn" onClick={handleLanguageChange}>
+          <motion.button
+            className="bookmarkBtn"
+            onClick={handleLanguageChange}
+            whileHover={{ scale: 1.2 }} 
+            whileTap={{ scale: 0.9 }}  
+            transition={{ type: "spring", stiffness: 300 }}
+          >
             <span className="IconContainer">
               <img
                 src={language === 'en' ? thFlag : ukFlag}
                 alt={language === 'en' ? 'Thai Flag' : 'UK Flag'}
+                className="flag-icon"
               />
             </span>
             <p className="text">{language === 'en' ? 'TH' : 'EN'}</p>
-          </button>
+          </motion.button>
         </div>
       </div>
-    </header>
+    </motion.header>
   );
 };
 

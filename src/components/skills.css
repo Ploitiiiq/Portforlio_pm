@@ -25,6 +25,13 @@ header {
   height: 100px;
   width: 100%;
 }
+.flag-icon {
+  transition: transform 0.3s ease;
+}
+
+.flag-icon:hover {
+  transform: rotate(10deg) scale(1.1);
+}
 
 .nav {
   display: flex;
@@ -351,6 +358,12 @@ section {
     width: 80%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   }
+
+  .contact {
+    margin-top: -100px; 
+    padding-top: 60px; 
+  }
+  
   footer {
     padding: 20px;
     background: rgba(0, 0, 0, 0.8);
@@ -813,7 +826,6 @@ section {
       margin-right: 0;
       margin-bottom: 20px;
     }
-    
   
     .language-switcher {
       margin: 20px 0;
@@ -841,9 +853,7 @@ section {
     .hero p {
       font-size: 16px;
       line-height: 1.6;
-      margin-botom: 20px;
-      margin-bottom: 50px; /* เพิ่มระยะห่างจากด้านล่าง */
-
+      margin-bottom: 50px;
     }
   
     .hero-image img {
@@ -859,7 +869,32 @@ section {
   
     .skills-container {
       flex-direction: column;
+      align-items: center;
       gap: 20px;
+    }
+  
+    .about,
+    .project-description {
+      padding: 0 20px;
+    }
+  
+    .languages,
+    .frameworks,
+    .tools {
+      width: 100%;
+      max-width: 90%;
+    }
+  
+    .skill-grid {
+      gap: 20px;
+    }
+  
+    .project-image {
+      max-width: 100%;
+    }
+  
+    .projects .project-item {
+      width: 90%;
     }
   }
   
@@ -867,14 +902,13 @@ section {
     .nav-menu {
       flex-direction: column;
       gap: 10px;
-      font-size: 10px;  /* ลดขนาดตัวอักษร */
-
+      font-size: 10px;
     }
   
     .hero h1 {
       font-size: 25px;
       margin-top: 0px;
-      margin-bottom: 40px; /* เพิ่มระยะห่างจากด้านล่าง */
+      margin-bottom: 40px;
     }
   
     .btn {

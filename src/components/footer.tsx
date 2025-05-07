@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next'; // นำเข้า useTransla
 import "./skills.css"; // เปลี่ยนเป็นตัวพิมพ์เล็ก
 
 const Footer = () => {
-  const { t } = useTranslation(); // เรียกใช้ t() จาก useTranslation
+  const { t } = useTranslation(); 
 
   return (
     <footer>

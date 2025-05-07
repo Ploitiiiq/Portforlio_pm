@@ -15,11 +15,11 @@ import Skills from './components/skills';
 import './app.css';
 
 const App: React.FC = () => {
-  useTranslation(); // ยังคงใช้งาน i18n ที่นี่แค่ครั้งเดียวพอ
+  useTranslation(); 
 
   return (
     <div className="App">
-      <Header /> {/* <-- ปุ่มสลับภาษาไปอยู่ใน Header แล้ว */}
+      <Header /> 
       <Hero />
       <About />
       <Skills />
