@@ -12,7 +12,7 @@ const Contact = () => {
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.7 }}
-      viewport={{ once: true }}
+      viewport={{ once: false }}
     >
       <p className="text-xl font-semibold mb-2">{t('Contact')}</p>
       <p className="mb-1">📧 Email: ploitii6@gmail.com</p>
