@@ -19,18 +19,17 @@ html[lang="th"] body {
 
 header {
   display: flex;
-  justify-content: space-between; /* กระจายเนื้อหา */
-  align-items: center; /* จัดตำแหน่งให้อยู่กลางแนวตั้ง */
+  justify-content: space-between;
+  align-items: center;
   padding: 20px 60px;
   height: 100px;
-  width: 100%; /* ครอบคลุมทั้งหน้าจอ */
+  width: 100%;
 }
 
 .nav {
   display: flex;
-  padding-top: 20px; /* เพิ่มระยะห่างจากขอบบน */
-
-  justify-content: space-between; /* กระจายเนื้อหา */
+  padding-top: 20px; 
+  justify-content: space-between; 
   width: 100%;
 }
 .nav-menu {
@@ -42,23 +41,23 @@ header {
 }
 
 .nav-menu li a {
-  font-size: 20px; /* กำหนดขนาดตัวอักษร */
+  font-size: 20px;
   text-decoration: none;
-  color: #fff; /* สีปกติ */
+  color: #fff; 
   font-weight: bold;
   transition: color 0.3s ease;
   cursor: pointer;
 }
 
 .nav-menu li a:hover {
-  color: yellow; /* เมื่อเอาเมาส์ชี้ */
+  color: yellow; 
 }
 
 .portfolio-logo {
-  font-size: 3rem;  /* ขนาดฟอนต์ */
+  font-size: 3rem; 
   font-weight: bold;
   color: white;
-  margin-right: 20px; /* ระยะห่างระหว่างโลโก้กับเมนู */
+  margin-right: 20px;
   letter-spacing: 2px;
   text-transform: uppercase;
   font-family: 'Arial', sans-serif;
@@ -69,7 +68,7 @@ header {
   list-style: none;
   gap: 90px;
   color: white;
-  justify-content: center; /* จัดเมนูให้อยู่กลาง */
+  justify-content: center; 
   flex-grow: 1;
 }
 
@@ -77,7 +76,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 50px; /* จัดปุ่มสลับภาษาไปทางซ้ายสุด */
+  margin-right: 50px; 
 }
 
 .bookmarkBtn {
@@ -92,7 +91,7 @@ header {
   cursor: pointer;
   transition-duration: 0.3s;
   overflow: hidden;
-  box-sizing: border-box; /* ทำให้ขนาดรวมถึงขอบและ padding */
+  box-sizing: border-box; 
 }
 
 .IconContainer {
@@ -142,14 +141,14 @@ header {
 .logo {
   font-size: 30px;
   font-weight: bold;
-  margin-left: 50px; /* ระยะห่างจากขอบซ้าย */
+  margin-left: 50px; 
 }
 
 nav {
   display: flex;
-  justify-content: center; /* จัดเมนูให้อยู่ตรงกลาง */
-  align-items: center; /* จัดตำแหน่งเมนูในแนวตั้ง */
-  width: 100%; /* ทำให้ nav ครอบคลุมพื้นที่ที่เหลือ */
+  justify-content: center; 
+  align-items: center; 
+  width: 100%;
 }
 
 nav ul {
@@ -160,14 +159,14 @@ nav ul {
 }
 
 nav ul li {
-  margin-left: 70px; /* ปรับช่องว่างระหว่างรายการ */
+  margin-left: 70px;
 }
 
 nav ul li a {
   text-decoration: none;
   color: white;
   font-size: 18px;
-  letter-spacing: 1px; /* เพิ่มระยะห่างระหว่างตัวอักษร */
+  letter-spacing: 1px;
   transition: 0.3s;
 }
 
@@ -230,15 +229,15 @@ nav ul li a:hover {
   max-width: 800px;
   line-height: 1.6;
   margin: 0 auto;
-  word-break: break-word; /* เพิ่มให้คำยาวเกินไปไม่ตัดออกจากบรรทัด */
+  word-break: break-word; 
 }
 
 .about h2 {
-  text-align: center; /* จัดข้อความใน <h2> ให้ตรงกลาง */
+  text-align: center;
 }
 
 .about p {
-  text-align: justify; /* จัดข้อความใน <p> ให้เต็มบรรทัด */
+  text-align: justify; 
 }
 
 section {
@@ -295,10 +294,10 @@ section {
   width: 80px;
   height: 80px;
   object-fit: contain;
-  transition: transform 0.3s ease; /* Smooth transition for scaling */
+  transition: transform 0.3s ease;
 }
 .skill-item img.icon:hover {
-  transform: scale(1.6); /* Enlarge the icon to 120% */
+  transform: scale(1.6); 
 }
 .skill-item p {
   margin-top: 10px;
@@ -307,20 +306,20 @@ section {
 }
 .project-image {
   display: block;
-  margin: 0 auto;         /* จัดภาพให้อยู่ตรงกลางแนวนอน */
+  margin: 0 auto;        
   max-width: 70%;
   height: auto;
   margin: 20px auto; 
 }
 
 .project-item {
-  text-align: center;      /* จัดข้อความและ slider ให้อยู่กลาง */
+  text-align: center;   
   padding: 20px;
 }
 
 .slick-slide > div {
   display: flex;
-  justify-content: center; /* จัดให้ภาพอยู่ตรงกลางแนวนอน */
+  justify-content: center; 
 }
 
 .project-description {
@@ -329,45 +328,20 @@ section {
   text-align: justify;
   text-align-last: center;
   line-height: 1.6;
-  margin: 30px auto 40px; /* บน 20px, ซ้าย/ขวา auto, ล่าง 40px */
+  margin: 30px auto 40px;
 
 }
 
 .project-section {
-  margin: 50px 0; /* เพิ่มห่างด้านบนและล่างของแต่ละ section */
+  margin: 50px 0; 
 }
 .center-content {
   display: flex;
   flex-direction: column;
-  align-items: center; /* จัดให้อยู่กึ่งกลางแนวนอน */
-  text-align: center; /* จัดข้อความให้อยู่กลาง */
+  align-items: center;
+  text-align: center; 
 }
 
-/* RESPONSIVE */
-@media (max-width: 900px) {
-  .hero {
-    flex-direction: column;
-    text-align: center;
-    padding: 40px 20px;
-  }
-
-  .hero-content,
-  .hero-image {
-    max-width: 100%;
-    margin-left: 0;
-  }
-
-  .skills-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .languages,
-  .frameworks,
-  .tools {
-    width: 90%;
-  }
-}
 
   .projects .project-item {
     background: rgba(255, 255, 255, 0.1);
@@ -697,12 +671,11 @@ section {
     align-items: center;
     justify-content: flex-end;
     padding-right: 35px;
-    margin-top: -20px; /* ปรับตามความสูง Header ของคุณ */
+    margin-top: -20px; 
     z-index: 20;
   }
   
   
-  /* ปุ่ม Bookmark Style */
   .bookmarkBtn {
     width: 100px;
     height: 40px;
@@ -773,18 +746,17 @@ section {
     transition-duration: 0.3s;
   }
 
-    @media (max-width: 900px) {
-      .language-switcher {
-        /* ปรับขนาดของปุ่มให้เล็กลง */
-        margin-right: 5px; /* อาจต้องปรับระยะห่างจากขอบ */
-        justify-content: flex-start; /* ให้ปุ่มอยู่ชิดซ้าย */
-      }
-    
-      .bookmarkBtn {
-        width: 80px;  /* ปรับขนาดของปุ่ม */
-        height: 35px;
-        font-size: 14px;  /* ลดขนาดตัวอักษร */
-      }
+  @media (max-width: 900px) {
+    .language-switcher {
+      margin-right: 5px;
+      justify-content: flex-start;
+    }
+  
+    .bookmarkBtn {
+      width: 80px;
+      height: 35px;
+      font-size: 14px;
+    }
   
     .IconContainer {
       width: 28px;
@@ -799,16 +771,110 @@ section {
     .text {
       font-size: 0.9em;
     }
+  
+    .hero {
+      flex-direction: column;
+      text-align: center;
+      padding: 40px 20px;
+    }
+  
+    .hero-content,
+    .hero-image {
+      max-width: 100%;
+      margin-left: 0;
+    }
+  
+    .skills-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .languages,
+    .frameworks,
+    .tools {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 30px 20px;
+      height: auto;
+      text-align: center;
+      gap: 15px;
+    }
+  
+    .portfolio-logo {
+      font-size: 1rem;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+    
+  
+    .language-switcher {
+      margin: 20px 0;
+    }
+  
+    .hero {
+      flex-direction: column;
+      padding: 40px 20px;
+      text-align: center;
+    }
+  
+    .hero-content {
+      max-width: 700px;
+      margin: 0 auto 30px;
+      padding: 0 20px;
+      text-align: center;
+    }
+  
+    .hero h1 {
+      font-size: 26px;
+      margin-bottom: 15px;
+      line-height: 1.3;
+    }
+  
+    .hero p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-botom: 20px;
+      margin-bottom: 50px; /* เพิ่มระยะห่างจากด้านล่าง */
+
+    }
+  
+    .hero-image img {
+      margin: 20px auto 0;
+      max-width: 250px;
+      border-radius: 50px;
+    }
+  
+    .btn {
+      padding: 8px 16px;
+      font-size: 30px;
+    }
+  
+    .skills-container {
+      flex-direction: column;
+      gap: 20px;
+    }
   }
   
   @media (max-width: 500px) {
     .nav-menu {
       flex-direction: column;
       gap: 10px;
+      font-size: 10px;  /* ลดขนาดตัวอักษร */
+
     }
   
     .hero h1 {
-      font-size: 32px;
+      font-size: 25px;
+      margin-top: 0px;
+      margin-bottom: 40px; /* เพิ่มระยะห่างจากด้านล่าง */
     }
   
     .btn {
@@ -825,73 +891,5 @@ section {
       width: 60px;
       height: 60px;
     }
-  }
-  @media (max-width: 768px) {
-
-    header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;  /* จัดกลางแนวตั้ง */
-      padding: 20px;
-      height: auto;
-      text-align: center;       /* จัดกลางเนื้อหาข้อความ */
-    }
-  
-    .portfolio-logo {
-      font-size: 1.3rem;
-      margin-right: 0;
-      margin-bottom: 10px;
-    }
-  
-    .nav-menu {
-      flex-direction: column;
-      gap: 15px;
-    }
-  
-    .language-switcher {
-      margin: 20px 0;
-    }
-  
-    .hero {
-      flex-direction: column;
-      padding: 30px 20px;
-      text-align: center;
-    }
-  
-    .hero-content {
-      max-width: 700px;
-      margin: 0 auto;
-      padding: 0 20px; /* กันข้อความชิดขอบหน้าจอเกินไป */
-      text-align: center; /* หรือ left ถ้าต้องการชิดซ้าย */
-  }
-  
-  
-    .hero-image img {
-      margin: 20px auto 0;
-      max-width: 250px;
-      border-radius: 50px;
-    }
-  
-    .hero h1 {
-      font-size: 32px;
-    }
-  
-    .hero p {
-      font-size: 16px;
-    }
-  
-    .btn {
-      padding: 8px 16px;
-      font-size: 16px;
-    }
-  
-  
-    .skills-container {
-      flex-direction: column;
-      gap: 20px;
-    }
-  
-  
   }
   
