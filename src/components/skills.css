@@ -15,6 +15,17 @@ body {
 html[lang="th"] body {
   font-family: 'Prompt', sans-serif;
 }
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
 
 
 header {
@@ -189,6 +200,7 @@ nav ul li a:hover {
   padding: 80px 60px;
   max-width: 1200px;
   margin: auto;
+  margin-top: 90px;
   text-align: left;
 }
 
@@ -232,10 +244,10 @@ nav ul li a:hover {
 
 /* ABOUT SECTION */
 .about {
-  font-size: 21px;
+  font-size: 20px;
   max-width: 800px;
   line-height: 1.6;
-  margin: 0 auto;
+  margin:  auto;
   word-break: break-word; 
 }
 
@@ -276,7 +288,7 @@ section {
   padding: 20px;
   border-radius: 10px;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1400px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   text-align: center;
 }
